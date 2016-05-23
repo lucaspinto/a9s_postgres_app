@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "MyMongodbBlog" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "MyPostgreSQLBlog" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -46,21 +46,19 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="row">
         <div class="col-lg-9">
-          <%= bootstrap_flash %>
           <%= yield %>
         </div>
       </div><!--/row-->
     </div> <!-- /container -->
 
-    <div class="footer navbar navbar-default navbar-static-bottom">
+    <div class="footer">
       <div class="container">
-        <span>&copy; 2015 <a href="https://avarteq.com">avarteq</a></span>
+        <span>&copy; 2015 <a href="https://enterprise.anynines.com">anynines enterprise</a></span>
       </div>
     </div>
 
   </body>
 </html>
-
